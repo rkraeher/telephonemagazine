@@ -1,2 +1,2 @@
 # telephonemagazine
-website for a literary and arts magazine
+website for an online literary and arts magazine
