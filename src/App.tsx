@@ -1,13 +1,15 @@
-import './App.css';
+import React from 'react';
+import { Home } from './components/Home';
 
 export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <p>
           Telephonemagazine
         </p>
       </header>
+      <Home />
     </div>
   );
 }
