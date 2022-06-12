@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// do the mobile styling first...
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 3vw 0;
 `;
 
