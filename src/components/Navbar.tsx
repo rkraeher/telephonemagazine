@@ -1,16 +1,11 @@
 import { Icon, Navbar as Wrapper } from "react-materialize";
-import { Icon, Navbar as NavbarMaterial, NavItem } from "react-materialize";
+import * as S from './Navbar.styles';
 
 export const Navbar = () => {
   return (
     <Wrapper
       alignLinks="right"
-      brand={
-        <a href="#">
-          telephone magazine
-        </a>
-      }
-      id="mobile-nav"
+      brand={<S.Home href="#">telephone magazine</S.Home>}
       menuIcon={<Icon>menu</Icon>}
     >
       <S.NavItem href="">About</S.NavItem>
