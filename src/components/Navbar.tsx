@@ -1,9 +1,9 @@
-import React from "react";
+import { Icon, Navbar as Wrapper } from "react-materialize";
 import { Icon, Navbar as NavbarMaterial, NavItem } from "react-materialize";
 
 export const Navbar = () => {
   return (
-    <NavbarMaterial
+    <Wrapper
       alignLinks="right"
       brand={
         <a href="#">
@@ -12,16 +12,9 @@ export const Navbar = () => {
       }
       id="mobile-nav"
       menuIcon={<Icon>menu</Icon>}
-      options={{
-        draggable: true,
-        edge: "left",
-        inDuration: 250,
-        outDuration: 200,
-        preventScrolling: true,
-      }}
     >
-      <NavItem href="">About</NavItem>
-      <NavItem href="">Masthead</NavItem>
-    </NavbarMaterial>
+      <S.NavItem href="">About</S.NavItem>
+      <S.NavItem href="">Masthead</S.NavItem>
+    </Wrapper>
   );
 };
