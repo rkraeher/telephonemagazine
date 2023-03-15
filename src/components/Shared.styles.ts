@@ -14,4 +14,5 @@ export const Header = styled.h1`
 export const Text = styled.p`
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-align: left;
 `;

@@ -1,4 +1,4 @@
-import * as S from './About.styles';
+import * as S from './Shared.styles';
 
 export const Masthead = () => {
   return (
