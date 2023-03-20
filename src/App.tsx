@@ -21,6 +21,10 @@ const router = createBrowserRouter([
     path: 'masthead',
     element: <Masthead />,
   },
+  {
+    path: '*',
+    element: <Home />,
+  },
 ]);
 
 export const App = () => {
