@@ -1,4 +1,4 @@
-import telegraphSchematicImage from '../../images/telegraph-schematic.svg';
+import telegraphSchematicImage from 'images/telegraph-schematic.svg';
 import * as S from './Home.styles';
 
 export const Home = () => {

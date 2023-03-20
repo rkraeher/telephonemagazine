@@ -1,10 +1,7 @@
-import React from 'react';
-import { Home } from './components/Home/Home';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
-import { Navbar } from './components/Navbar/Navbar';
-import { About } from './components/About';
-import { Masthead } from './components/Masthead';
+import { Navbar } from 'components/Navbar/Navbar';
+import { Home } from 'components/Home/Home';
 
 export const App = () => {
   return (
@@ -13,8 +10,6 @@ export const App = () => {
         <Navbar />
       </header>
       <Home />
-      {/* <About /> */}
-      {/* <Masthead /> */}
     </div>
   );
 };
