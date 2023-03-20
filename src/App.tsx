@@ -4,12 +4,22 @@ import { Navbar } from 'components/Navbar/Navbar';
 import { Home } from 'components/Home/Home';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from 'components/ErrorPage/ErrorPage';
+import { About } from 'components/About';
+import { Masthead } from 'components/Masthead';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: 'about',
+    element: <About />,
+  },
+  {
+    path: 'masthead',
+    element: <Masthead />,
   },
 ]);
 

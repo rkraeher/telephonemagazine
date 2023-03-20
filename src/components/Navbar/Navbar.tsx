@@ -5,11 +5,11 @@ export const Navbar = () => {
   return (
     <Wrapper
       alignLinks='right'
-      brand={<S.Home href='#'>telephone magazine</S.Home>}
+      brand={<S.Home href='/'>telephone magazine</S.Home>}
       menuIcon={<Icon>menu</Icon>}
     >
-      <S.NavItem href={`/contacts/1`}>About</S.NavItem>
-      <S.NavItem href=''>Masthead</S.NavItem>
+      <S.NavItem href={`/about`}>About</S.NavItem>
+      <S.NavItem href='/masthead'>Masthead</S.NavItem>
     </Wrapper>
   );
 };
