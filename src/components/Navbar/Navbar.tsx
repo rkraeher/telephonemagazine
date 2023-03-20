@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <Wrapper
       alignLinks='right'
-      brand={<S.Home href='/'>telephone magazine</S.Home>}
+      brand={<S.Home href={`/`}>telephone magazine</S.Home>}
       menuIcon={<Icon>menu</Icon>}
     >
       <S.NavItem href={`/about`}>About</S.NavItem>

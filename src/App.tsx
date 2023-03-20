@@ -6,33 +6,37 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorPage } from 'components/ErrorPage/ErrorPage';
 import { About } from 'components/About';
 import { Masthead } from 'components/Masthead';
+import { Root } from 'components/Root';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Root />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: 'about',
-    element: <About />,
-  },
-  {
-    path: 'masthead',
-    element: <Masthead />,
-  },
-  {
-    path: '*',
-    element: <Home />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'masthead',
+        element: <Masthead />,
+      },
+      {
+        path: '*',
+        element: <Home />,
+      },
+    ],
   },
 ]);
 
 export const App = () => {
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
       <RouterProvider router={router} />
     </div>
   );
